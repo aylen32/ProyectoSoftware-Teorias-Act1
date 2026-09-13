@@ -1,0 +1,276 @@
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f4efe6; /* Tono beige/crema claro tierra */
+    color: #3b2f2f; /* Café oscuro profundo */
+    line-height: 1.6;
+}
+
+/* Header & Navigation Bar */
+.header {
+    background-color: #5c4033; /* Marrón tierra oscuro */
+    color: #f4efe6;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: block;
+    padding: 12px 20px;
+}
+
+.logo {
+    font-size: 1.6rem;
+    color: #e2d4b7;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.navbar {
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-links > li {
+    display: inline-block;
+    position: relative;
+    margin: 0 8px;
+}
+
+.nav-links a {
+    color: #f4efe6;
+    text-decoration: none;
+    padding: 8px 14px;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #4a3429;
+    color: #d4a373;
+}
+
+/* Dropdown Menu (CSS Puro) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4a3429;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+    list-style: none;
+    text-align: left;
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #5c4033;
+}
+
+.dropdown-content a:hover {
+    background-color: #6b4c3b;
+    color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Main Container & Layout */
+.container {
+    max-width: 1050px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+/* Cards & Sections */
+.card {
+    background-color: #fcf9f2;
+    border: 2px solid #d4c5b0;
+    border-radius: 6px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    color: #4a5d4e; /* Verde oliva profundo */
+    border-bottom: 2px solid #8c6d58;
+    padding-bottom: 6px;
+    margin-bottom: 18px;
+    font-size: 1.6rem;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+}
+
+/* Plant Grid Layout */
+.plant-grid {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.plant-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-width: 250px;
+    margin: 1%;
+    background-color: #ebdcc9;
+    border: 1px solid #c8b49c;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.plant-card h3 {
+    color: #5c4033;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+/* Requerimiento Específico: Padding 5px y Borde tipo Groove para las imágenes */
+.plant-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 5px;
+    border: 4px groove #8c6d58;
+    background-color: #ffffff;
+    display: block;
+    margin: 0 auto 12px auto;
+}
+
+.pdf-link {
+    display: inline-block;
+    background-color: #6b705c;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    transition: background-color 0.3s;
+}
+
+.pdf-link:hover {
+    background-color: #3f4234;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 15px auto 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4a3429;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b5a48b;
+    border-radius: 4px;
+    background-color: #fffefb;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #3b2f2f;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #6b705c;
+    box-shadow: 0 0 5px rgba(107, 112, 92, 0.5);
+}
+
+.btn-submit {
+    background-color: #8c6d58;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #5c4033;
+}
+
+/* Footer */
+.footer {
+    background-color: #3b2f2f;
+    color: #d4c5b0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design Media Queries */
+@media (max-width: 768px) {
+    .header-container {
+        text-align: center;
+    }
+    
+    .nav-links > li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: none;
+        width: 100%;
+        box-shadow: none;
+        background-color: #3f2c23;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .plant-card {
+        width: 95%;
+        margin: 10px auto;
+        display: block;
+    }
+}

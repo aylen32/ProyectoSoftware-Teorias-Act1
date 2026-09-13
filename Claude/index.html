@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Jardín — plantas de interior y exterior</title>
+<link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+<header class="barra-nav">
+  <input type="checkbox" id="control-menu" class="control-menu">
+  <div class="nav-interna">
+    <a href="#inicio" class="marca">Mi <span>Jardín</span></a>
+    <label for="control-menu" class="etiqueta-menu" aria-label="Abrir menú">&#9776;</label>
+    <ul class="menu-nav">
+      <li><a href="#inicio">Inicio</a></li>
+      <li class="tiene-submenu">
+        <a href="#interior" tabindex="0">Plantas <span class="flecha">&#9662;</span></a>
+        <ul class="submenu">
+          <li><a href="#interior">Interior</a></li>
+          <li><a href="#exterior">Exterior</a></li>
+        </ul>
+      </li>
+      <li><a href="#quien-mantiene">Quién mantiene el sitio</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="hero-texto">
+    <h1>Un rincón de tierra, hojas y raíces</h1>
+    <p>Un registro sencillo de las plantas que cultivo en casa: las que viven puertas adentro y las que crecen a la intemperie, con su ficha de cuidados a mano.</p>
+  </div>
+  <svg class="colinas" viewBox="0 0 1080 140" preserveAspectRatio="none" role="presentation" aria-hidden="true">
+    <path d="M0 90 C 180 40, 340 120, 540 70 C 740 20, 900 110, 1080 60 L1080 140 L0 140 Z" fill="#C9B98C"/>
+    <path d="M0 110 C 220 80, 380 140, 600 100 C 800 65, 960 130, 1080 95 L1080 140 L0 140 Z" fill="#8C7A57"/>
+  </svg>
+</section>
+
+<main>
+
+  <section class="seccion" id="interior">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Plantas de interior</h2>
+      <p class="copete-seccion">Ejemplares que crecen dentro de casa, resguardados de las heladas y el sol directo.</p>
+
+      <div class="grilla-plantas">
+
+        <article class="tarjeta-planta">
+          <div class="marco-imagen">
+            <img src="imagenes/potus.svg" alt="Potus en maceta de barro">
+          </div>
+          <h3>Potus</h3>
+          <p class="nombre-cientifico">Epipremnum aureum</p>
+          <a class="enlace-ficha" href="info/potus.pdf">Ver ficha (PDF) &rarr;</a>
+        </article>
+
+        <article class="tarjeta-planta">
+          <div class="marco-imagen">
+            <img src="imagenes/sansevieria.svg" alt="Sansevieria de hojas erguidas">
+          </div>
+          <h3>Sansevieria</h3>
+          <p class="nombre-cientifico">Sansevieria trifasciata</p>
+          <a class="enlace-ficha" href="info/sansevieria.pdf">Ver ficha (PDF) &rarr;</a>
+        </article>
+
+        <article class="tarjeta-planta">
+          <div class="marco-imagen">
+            <img src="imagenes/helecho.svg" alt="Helecho de Boston con frondes arqueados">
+          </div>
+          <h3>Helecho de Boston</h3>
+          <p class="nombre-cientifico">Nephrolepis exaltata</p>
+          <a class="enlace-ficha" href="info/helecho.pdf">Ver ficha (PDF) &rarr;</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="exterior">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Plantas de exterior</h2>
+      <p class="copete-seccion">Especies que crecen al aire libre, en el jardín, expuestas al sol y las estaciones.</p>
+
+      <div class="grilla-plantas">
+
+        <article class="tarjeta-planta">
+          <div class="marco-imagen">
+            <img src="imagenes/lavanda.svg" alt="Arbusto de lavanda en flor">
+          </div>
+          <h3>Lavanda</h3>
+          <p class="nombre-cientifico">Lavandula angustifolia</p>
+          <a class="enlace-ficha" href="info/lavanda.pdf">Ver ficha (PDF) &rarr;</a>
+        </article>
+
+        <article class="tarjeta-planta">
+          <div class="marco-imagen">
+            <img src="imagenes/romero.svg" alt="Arbusto de romero">
+          </div>
+          <h3>Romero</h3>
+          <p class="nombre-cientifico">Rosmarinus officinalis</p>
+          <a class="enlace-ficha" href="info/romero.pdf">Ver ficha (PDF) &rarr;</a>
+        </article>
+
+        <article class="tarjeta-planta">
+          <div class="marco-imagen">
+            <img src="imagenes/geranio.svg" alt="Geranio en maceta de barro">
+          </div>
+          <h3>Geranio</h3>
+          <p class="nombre-cientifico">Pelargonium spp.</p>
+          <a class="enlace-ficha" href="info/geranio.pdf">Ver ficha (PDF) &rarr;</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="quien-mantiene">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Quién mantiene el sitio</h2>
+      <div class="panel-cuidador">
+        <div class="avatar-cuidador" role="presentation" aria-hidden="true"></div>
+        <div>
+          <p>Este jardín y su bitácora los mantiene una persona aficionada a la jardinería doméstica, que documenta el cuidado de cada planta a medida que las va incorporando a la casa y al patio.</p>
+          <dl>
+            <dt>Ubicación</dt>
+            <dd>La Plata, Buenos Aires, Argentina</dd>
+            <dt>Desde</dt>
+            <dd>2019</dd>
+            <dt>Correo</dt>
+            <dd>jardin@ejemplo.com</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="contacto">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Contacto</h2>
+      <p class="copete-seccion">¿Tenés dudas sobre alguna planta o querés compartir un consejo? Escribime.</p>
+
+      <form class="formulario-contacto" action="mailto:jardin@ejemplo.com" method="post" enctype="text/plain">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="campo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <button type="submit" class="boton-enviar">Enviar mensaje</button>
+        <p class="nota-formulario">Sitio estático sin procesamiento de formularios: al enviar, se abrirá tu programa de correo predeterminado.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie-pagina">
+  <p>Mi Jardín — bitácora personal de plantas de interior y exterior. <a href="#inicio">Volver arriba</a></p>
+</footer>
+
+</body>
+</html>

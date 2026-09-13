@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardín de Plantas</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">🌿 Mi Jardín</h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li class="dropdown">
+                        <a href="#plantas" class="dropbtn">Plantas &#9662;</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#interior">Plantas de Interior</a></li>
+                            <li><a href="#exterior">Plantas de Exterior</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Intro / General Info Section -->
+        <section id="inicio" class="card hero-section">
+            <h2>Bienvenido a mi Jardín Digital</h2>
+            <p>Este espacio está dedicado a compartir la colección de plantas que cultivo con mucha dedicación. Aquí encontrarás información detallada sobre las especies de interior y exterior que forman parte de mi espacio verde, sus cuidados básicos y fotografías representativas.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre-mi" class="card">
+            <h2>Sobre mí</h2>
+            <p>¡Hola! Soy un entusiasta de la botánica y la jardinería hogareña. Me apasiona cultivar diferentes variedades de plantas, aprender sobre sus requerimientos de luz, sustrato y riego, y crear espacios naturales acogedores tanto dentro como fuera del hogar.</p>
+        </section>
+
+        <!-- Plants Container -->
+        <div id="plantas">
+            <!-- Indoor Plants Section -->
+            <section id="interior" class="card section-plants">
+                <h2>Plantas de Interior</h2>
+                <div class="plant-grid">
+                    
+                    <div class="plant-card">
+                        <h3>Monstera Deliciosa</h3>
+                        <img src="imagenes/monstera.jpg" alt="Monstera Deliciosa" class="plant-img">
+                        <a href="info/monstera.pdf" target="_blank" class="pdf-link">📄 Ver Ficha Técnica (PDF)</a>
+                    </div>
+
+                    <div class="plant-card">
+                        <h3>Sansevieria</h3>
+                        <img src="imagenes/sansevieria.jpg" alt="Sansevieria" class="plant-img">
+                        <a href="info/sansevieria.pdf" target="_blank" class="pdf-link">📄 Ver Ficha Técnica (PDF)</a>
+                    </div>
+
+                    <div class="plant-card">
+                        <h3>Pothos</h3>
+                        <img src="imagenes/pothos.jpg" alt="Pothos" class="plant-img">
+                        <a href="info/pothos.pdf" target="_blank" class="pdf-link">📄 Ver Ficha Técnica (PDF)</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Outdoor Plants Section -->
+            <section id="exterior" class="card section-plants">
+                <h2>Plantas de Exterior</h2>
+                <div class="plant-grid">
+                    
+                    <div class="plant-card">
+                        <h3>Lavanda</h3>
+                        <img src="imagenes/lavanda.jpg" alt="Lavanda" class="plant-img">
+                        <a href="info/lavanda.pdf" target="_blank" class="pdf-link">📄 Ver Ficha Técnica (PDF)</a>
+                    </div>
+
+                    <div class="plant-card">
+                        <h3>Rosal</h3>
+                        <img src="imagenes/rosal.jpg" alt="Rosal" class="plant-img">
+                        <a href="info/rosal.pdf" target="_blank" class="pdf-link">📄 Ver Ficha Técnica (PDF)</a>
+                    </div>
+
+                    <div class="plant-card">
+                        <h3>Jazmín del País</h3>
+                        <img src="imagenes/jazmin.jpg" alt="Jazmín del País" class="plant-img">
+                        <a href="info/jazmin.pdf" target="_blank" class="pdf-link">📄 Ver Ficha Técnica (PDF)</a>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Form Section -->
+        <section id="contacto" class="card">
+            <h2>Contacto</h2>
+            <p>Si deseas realizar alguna consulta o intercambiar consejos sobre jardinería, puedes enviarme un mensaje a través del siguiente formulario:</p>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Mi Jardín - Bitácora de Cultivo. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
